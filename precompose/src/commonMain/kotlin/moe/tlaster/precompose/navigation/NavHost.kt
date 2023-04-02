@@ -108,9 +108,11 @@ fun NavHost(
             }
         }
         currentSceneEntry?.let {
-            AnimatedContent(it, transitionSpec = transitionSpec) { entry ->
-                NavHostContent(stateHolder, entry)
-            }
+            NavHostContent(stateHolder, it)
+            // TODO fix java.lang.NoSuchMethodError: No static method AnimatedContent(Ljava/lang/Object;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/Alignment;Ljava/lang/String;Lkotlin/jvm/functions/Function4;Landroidx/compose/runtime/Composer;II)V in class Landroidx/compose/animation/AnimatedContentKt; or its super classes (declaration of 'androidx.compose.animation.AnimatedContentKt' appears in /data/app/~~wJcO4IHNP5nHIVsZUurV4A==/moe.tlaster.android-ng79Mr4hAhLm6pm67r1PBg==/base.apk)
+            // AnimatedContent(it, transitionSpec = transitionSpec) { entry ->
+            //     NavHostContent(stateHolder, entry)
+            // }
         }
         val currentFloatingEntry by remember(manager) {
             derivedStateOf {
@@ -118,9 +120,11 @@ fun NavHost(
             }
         }
         currentFloatingEntry?.let {
-            AnimatedContent(it, transitionSpec = transitionSpec) { entry ->
-                NavHostContent(stateHolder, entry)
-            }
+            NavHostContent(stateHolder, it)
+            // TODO fix java.lang.NoSuchMethodError: No static method AnimatedContent(Ljava/lang/Object;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/Alignment;Ljava/lang/String;Lkotlin/jvm/functions/Function4;Landroidx/compose/runtime/Composer;II)V in class Landroidx/compose/animation/AnimatedContentKt; or its super classes (declaration of 'androidx.compose.animation.AnimatedContentKt' appears in /data/app/~~wJcO4IHNP5nHIVsZUurV4A==/moe.tlaster.android-ng79Mr4hAhLm6pm67r1PBg==/base.apk)
+            // AnimatedContent(it, transitionSpec = transitionSpec) { entry ->
+            //     NavHostContent(stateHolder, entry)
+            // }
         }
     }
 }
