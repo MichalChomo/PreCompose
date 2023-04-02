@@ -24,7 +24,6 @@ fun preComposeWindow(
     // Ugly workaround until ComposeJS is more mature.
     // Eventually this can just be a Window(title, content) call.
     ComposeWindow().apply {
-        setTitle(title)
 
         setContent {
             val holder = remember {
