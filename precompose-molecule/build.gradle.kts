@@ -36,7 +36,7 @@ kotlin {
                 compileOnly(compose.foundation)
                 compileOnly(compose.animation)
                 compileOnly(project(":precompose"))
-                compileOnly("app.cash.molecule:molecule-runtime:0.7.0")
+                compileOnly("app.cash.molecule:molecule-runtime:0.8.0")
             }
         }
         val commonTest by getting {
@@ -52,7 +52,7 @@ kotlin {
                 implementation("androidx.compose.ui:ui:${Versions.compose}")
             }
         }
-        val androidTest by getting {
+        val androidUnitTest by getting {
             dependencies {
                 implementation(kotlin("test-junit"))
                 implementation("junit:junit:4.13.2")

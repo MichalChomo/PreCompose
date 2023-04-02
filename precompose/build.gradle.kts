@@ -58,7 +58,7 @@ kotlin {
                 api("androidx.savedstate:savedstate-ktx:1.2.0")
             }
         }
-        val androidTest by getting {
+        val androidUnitTest by getting {
             dependencies {
                 implementation(kotlin("test-junit"))
                 implementation("junit:junit:4.13.2")
